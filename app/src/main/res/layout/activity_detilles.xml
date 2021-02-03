@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".detilles.DetillesActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/liner"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_author"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/sing"
+
+
+                            />
+
+                        <ImageView
+                            android:id="@+id/add_favorite"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/ic_favorite_border_black_24dp" />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/btn_call"
+
+                android:layout_below="@id/liner">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cardView"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/namedet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Name"
+                        android:textColor="@color/red"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/changa" />
+
+                    <TextView
+                        android:id="@+id/pricdet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="20dp"
+                        android:text="price"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/changa" />
+
+                    <TextView
+                        android:id="@+id/descdet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="20dp"
+                        android:text="Description"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/changa" />
+
+                    <TextView
+                        android:id="@+id/sizedet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="20dp"
+                        android:text="Size"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/changa" />
+
+                    <TextView
+                        android:id="@+id/phonedet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="20dp"
+                        android:text="Call "
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/changa" />
+
+                    <TextView
+                        android:id="@+id/Addressdet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="20dp"
+                        android:text="Address "
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/changa" />
+                </LinearLayout>
+            </ScrollView>
+
+            <Button
+                android:id="@+id/btn_call"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorPrimary"
+                android:drawableLeft="@drawable/ic_call_black_24dp"
+                android:text="@string/call_us"
+                android:textColor="@color/whitee"
+                android:textSize="20dp"
+                app:fontFamily="@font/changa" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

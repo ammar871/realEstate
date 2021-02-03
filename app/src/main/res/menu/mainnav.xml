@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item  android:title="@string/home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:id="@+id/center"
+        />
+    <item android:title="@string/Favorate"
+        android:icon="@drawable/ic_favorite_black_24dp"
+        android:id="@+id/fav"/>
+
+
+
+    <item  android:title="@string/sitting"
+        android:icon="@drawable/ic_settings_black_24dp"
+         android:id="@+id/ssetting"
+        />
+
+    <item  android:title="@string/Add"
+        android:icon="@drawable/ic_add_black_24dp"
+          android:id="@+id/offer"
+        />
+
+</menu>

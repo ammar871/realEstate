@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/main_logut"
+        android:title="تسجيل الخروج"
+        />
+    <item
+        android:id="@+id/main_ogut"
+        android:title="تسجيل الخروج"
+        /><item
+    android:id="@+id/main_logou"
+    android:title="تسجيل الخروج"
+    /><item
+    android:id="@+id/main_loout"
+    android:title="تسجيل الخروج"
+    />
+</menu>

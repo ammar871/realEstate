@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"
+        tools:context=".sign.LoginActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_here"
+                app:fontFamily="@font/changa"
+                android:layout_marginTop="40dp"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="28sp"
+                android:layout_centerHorizontal="true" />
+
+
+            <LinearLayout
+                android:id="@+id/liner"
+                android:layout_below="@id/textView2"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="30sp"
+                android:layout_marginLeft="30sp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
+                <EditText
+                    android:id="@+id/editfirstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="15dp"
+                    android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                    android:ems="10"
+                    android:drawablePadding="8dp"
+                    android:hint="@string/first_name"
+                    app:fontFamily="@font/changa"
+
+                    android:inputType="text"
+                    android:textColor="@color/whitee"
+                    android:textSize="20dp"
+                    android:background="@drawable/sing"
+                    android:padding="8dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/editalastnem"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="15dp"
+                    android:drawableLeft="@drawable/ic_add_location_black_24dp"
+                    android:ems="10"
+                    android:drawablePadding="8dp"
+                    android:hint="@string/last_name"
+                    app:fontFamily="@font/changa"
+
+                    android:inputType="text"
+                    android:background="@drawable/sing"
+                    android:padding="8dp"
+                    android:textColor="@color/whitee"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/editphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="15dp"
+                    android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                    android:ems="10"
+                    android:drawablePadding="8dp"
+                    android:hint="@string/phone_number"
+                    app:fontFamily="@font/changa"
+
+                    android:textSize="20dp"
+                    android:background="@drawable/sing"
+                    android:padding="8dp"
+                    android:inputType="number"
+                    android:textColor="@color/whitee" />
+
+                <EditText
+                    android:id="@+id/editemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="15dp"
+                    android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                    android:ems="10"
+                    android:drawablePadding="8dp"
+                    app:fontFamily="@font/changa"
+
+                    android:hint="@string/e_email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/whitee"
+                    android:textSize="20dp"
+                    android:background="@drawable/sing"
+                    android:padding="8dp" />
+
+                <EditText
+                    android:id="@+id/editpaswword"
+                    android:layout_width="match_parent"
+                    android:drawablePadding="8dp"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@drawable/ic_visibility_off_black_24dp"
+                    android:ems="10"
+                    android:hint="@string/password"
+                    app:fontFamily="@font/changa"
+                    android:textSize="20dp"
+                    android:background="@drawable/sing"
+                    android:padding="8dp"
+                    android:inputType="textPassword"
+                    android:textColor="@color/whitee" />
+
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/signsign"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/loginsin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="5dp"
+
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="10dp">
+
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        app:fontFamily="@font/changa"
+                        android:text="@string/sing_up"
+                        android:textColor="#fff"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/loginsin"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="10dp">
+
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        app:fontFamily="@font/changa"
+                        android:text="@string/login"
+                        android:textColor="#fff"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
